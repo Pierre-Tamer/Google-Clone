@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+.searchPage__logo {
+  object-fit: contain;
+  height: 50px;
+  margin-right: 50px;
+}
+
+.searchPage__header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  align-items: flex-start;
+  padding: 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.searchPage__headerBody > .search > .search__input {
+  margin-top: 0;
+  width: unset;
+  margin: unset;
+  max-width: unset;
+}
+
+.searchPage__options {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+.searchPage__options a,
+.searchPage__optionsRight a {
+  text-decoration: none;
+  color: gray;
+}
+.searchPage__optionsRight,
+.searchPage__optionsLeft {
+  display: flex;
+}
+.searchPage__optionsRight {
+  margin-left: 80px;
+}
+.searchPage__option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.searchPage__option a {
+  margin-left: 5px;
+}
+
+.searchPage__result {
+  margin: 40px 100px;
+  display: flex;
+  border: 1px solid lightgray;
+  padding: 16px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.searchPage__result:hover {
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(195, 175, 226, 0.644);
+}
+
+.searchPage__resultCount {
+  color: #70757a;
+  font-size: 14px;
+  margin-left: 100px;
+}
+
+.search__results {
+  max-width: 650px;
+  margin: 20px 240px 100px 0px;
+}
+
+.searchPage__resultTitle {
+  text-decoration: none;
+}
+
+.searchPage__resultTitle:hover {
+  text-decoration: underline;
+}
+
+.searchPage__resultTitle > h2 {
+  font-weight: 500;
+}
+
+.searchPage__resultSnippet {
+  margin-top: 10px;
+}
+
+.searchPage__resultImage {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.searchPage__resultImage--container {
+  display: flex;
+}
