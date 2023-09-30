@@ -6,6 +6,7 @@
   object-fit: contain;
   height: 50px;
   margin-right: 50px;
+  margin-bottom: 20px;
 }
 
 .searchPage__header {
@@ -102,4 +103,37 @@
 
 .searchPage__resultImage--container {
   display: flex;
+}
+@media (max-width: 728px) {
+  .searchPage__result {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchPage__resultImage--container {
+    display: flex;
+    justify-content: center;
+  }
+  .searchPage__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+  .searchPage__optionsRight {
+    display: none;
+  }
+  .searchPage__headerBody > .search > .search__input {
+    width: 75vw;
+  }
+  .searchPage__options {
+    display: flex;
+    width: 75vw;
+  }
+  .searchPage__optionsLeft {
+    font-size: smaller;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 550px) {
 }
